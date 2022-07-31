@@ -1,5 +1,4 @@
-var connect = require('connect');
+var connect = require('connect')
+var serveStatic = require('serve-static');
 
-connect.createServer(
-    connect.static("../angularjs")
-).listen(5000);
+connect().use(serveStatic("./angularjs")).listen(5000);
