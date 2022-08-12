@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html ng-app="todoApp">
 <head>
     <title>TO DO List</title>
@@ -98,5 +98,47 @@
     </div>
 
     
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="/bootstrap.css" rel="stylesheet"></link>
+    <link href="/bootstrap-theme.css" rel="stylesheet"></link>
+    <script src="/angular.js"></script>
+    <script>
+        // function myFunc(){
+            // console.log("This is a statement");
+        // }
+        //  myFunc();
+// console.log(angular.isString("This is also a statment") + " " + angular.isArray(23));
+// console.log("I am "+ angular.uppercase("shouting")); 없어진 기능
+// console.log("I am "+ angular.lowercase("WhispeRing"));  없어진 기능
+    var myData = {
+        name : "Adam",
+        weather : "sunny",
+        printMessages : function(){
+            console.log("Hello " + this.name +". ");
+            console.log("Today is "+ this.weather + ".");
+        }
+    }
+
+
+    var myExtendedObject = {
+        city : "London"
+    }
+    
+    angular.extend(myExtendedObject, myData);
+
+    console.log(myExtendedObject.printMessages());
+    console.log(myExtendedObject.city);
+    </script>
+</head>
+<body>
+    This is a simple Example
 </body>
 </html>
